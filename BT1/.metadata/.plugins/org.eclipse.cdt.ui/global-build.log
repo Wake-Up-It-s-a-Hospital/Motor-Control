@@ -1,0 +1,1159 @@
+02:05:15 **** Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f103rbtx.d" -MT"Core/Startup/startup_stm32f103rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f103rbtx.o" "../Core/Startup/startup_stm32f103rbtx.s"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+../Core/Src/main.c:50:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   50 | uint8_t index = 0;
+      |         ^~~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:70:47: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   70 |                                 char *token = strtok(RECEIVED_STRING, ",");
+      |                                               ^~~~~~
+../Core/Src/main.c:70:47: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:72:51: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   72 |                                         sensor1 = atoi(token);
+      |                                                   ^~~~
+../Core/Src/main.c:73:47: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   73 |                                         token = strtok(NULL, "\r\n");
+      |                                               ^
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+  13904	    104	   2104	  16112	   3ef0	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+02:05:22 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-size  BT1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13904	    104	   2104	  16112	   3ef0	BT1.elf
+Finished building: default.size.stdout
+ 
+02:12:43 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:50:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   50 | uint8_t index = 0;
+      |         ^~~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:71:47: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   71 |                                 char *token = strtok(RECEIVED_STRING, ",");
+      |                                               ^~~~~~
+../Core/Src/main.c:71:47: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:73:51: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   73 |                                         sensor1 = atoi(token);
+      |                                                   ^~~~
+../Core/Src/main.c:74:47: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   74 |                                         token = strtok(NULL, "\r\n");
+      |                                               ^
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+  13908	    104	   2104	  16116	   3ef4	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+02:14:01 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:65:32: error: expected expression before ';' token
+   65 |                         index1+;
+      |                                ^
+../Core/Src/main.c:71:47: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   71 |                                 char *token = strtok(RECEIVED_STRING, ",");
+      |                                               ^~~~~~
+../Core/Src/main.c:71:47: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:73:51: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   73 |                                         sensor1 = atoi(token);
+      |                                                   ^~~~
+../Core/Src/main.c:74:47: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   74 |                                         token = strtok(NULL, "\r\n");
+      |                                               ^
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:20:51 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:71:47: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   71 |                                 char *token = strtok(RECEIVED_STRING, ",");
+      |                                               ^~~~~~
+../Core/Src/main.c:71:47: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:73:51: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   73 |                                         sensor1 = atoi(token);
+      |                                                   ^~~~
+../Core/Src/main.c:74:47: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   74 |                                         token = strtok(NULL, "\r\n");
+      |                                               ^
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+  13908	    104	   2104	  16116	   3ef4	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+02:20:52 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-size  BT1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13908	    104	   2104	  16116	   3ef4	BT1.elf
+Finished building: default.size.stdout
+ 
+02:29:31 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-size  BT1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13908	    104	   2104	  16116	   3ef4	BT1.elf
+Finished building: default.size.stdout
+ 
+02:50:51 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:64:17: error: expected ',' or ';' before '}' token
+   64 |                 }
+      |                 ^
+../Core/Src/main.c:66:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+   66 |                 HAL_UART_Receive_IT(&huart1, RX_BUFFER, 1);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              uint8_t {aka unsigned char}
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c:63:22: warning: unused variable 'a' [-Wunused-variable]
+   63 |                 char a = RX_BUFFER
+      |                      ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  102 |   HAL_UART_Receive_IT(&huart1, RX_BUFFER, 1);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                uint8_t {aka unsigned char}
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:51:06 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:63:22: warning: unused variable 'a' [-Wunused-variable]
+   63 |                 char a = RX_BUFFER;
+      |                      ^
+../Core/Src/main.c:66:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+   66 |                 HAL_UART_Receive_IT(&huart1, RX_BUFFER, 1);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              uint8_t {aka unsigned char}
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:68:1: error: expected identifier or '(' before '}' token
+   68 | }
+      | ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  102 |   HAL_UART_Receive_IT(&huart1, RX_BUFFER, 1);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                uint8_t {aka unsigned char}
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:51:46 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:66:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+   66 |                 HAL_UART_Receive_IT(&huart1, RX_BUFFER, 1);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              uint8_t {aka unsigned char}
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c:63:22: warning: unused variable 'a' [-Wunused-variable]
+   63 |                 char a = RX_BUFFER;
+      |                      ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  102 |   HAL_UART_Receive_IT(&huart1, RX_BUFFER, 1);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                uint8_t {aka unsigned char}
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8612	     12	   1716	  10340	   2864	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+02:51:49 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:65:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+   65 |                 HAL_UART_Receive_IT(&huart1, RX_BUFFER, 1);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              uint8_t {aka unsigned char}
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c:63:22: warning: unused variable 'a' [-Wunused-variable]
+   63 |                 char a = RX_BUFFER;
+      |                      ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  101 |   HAL_UART_Receive_IT(&huart1, RX_BUFFER, 1);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                uint8_t {aka unsigned char}
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8612	     12	   1716	  10340	   2864	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+02:54:10 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:63:22: warning: unused variable 'a' [-Wunused-variable]
+   63 |                 char a = RX_BUFFER;
+      |                      ^
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8604	     12	   1716	  10332	   285c	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+03:51:15 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:60:46: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+   60 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 1);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c:61:44: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   61 |                 HAL_UART_Transmit(&huart1, &uart_buf, 1, 10);
+      |                                            ^~~~~~~~~
+      |                                            |
+      |                                            char *
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:749:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  749 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+   97 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 1);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char *
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   9060	     12	   1716	  10788	   2a24	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+03:57:38 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-size  BT1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9060	     12	   1716	  10788	   2a24	BT1.elf
+Finished building: default.size.stdout
+ 
+04:06:03 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:61:46: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+   61 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 2);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+   97 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 2);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char *
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8596	     12	   1716	  10324	   2854	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+04:09:31 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:61:46: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+   61 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 1);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+   97 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 1);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char *
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8596	     12	   1716	  10324	   2854	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+04:10:49 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:61:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   61 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 2);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[2]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[2]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   97 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 2);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[2]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[2]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8596	     12	   1716	  10324	   2854	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+04:12:10 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:61:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   61 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[20]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   97 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[20]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8596	     12	   1732	  10340	   2864	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+10:41:52 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-size  BT1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8596	     12	   1732	  10340	   2864	BT1.elf
+Finished building: default.size.stdout
+ 
+11:17:04 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:61:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   61 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[20]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   97 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[20]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c:98:8: warning: unused variable 'test' [-Wunused-variable]
+   98 |   char test = 20;
+      |        ^~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8600	     12	   1732	  10344	   2868	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+11:17:40 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:62:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[20]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:98:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   98 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[20]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8596	     12	   1732	  10340	   2864	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+11:19:28 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:62:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[20]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:98:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   98 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[20]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8608	     12	   1740	  10360	   2878	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+11:22:29 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:63:26: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   63 |                 change = atoi(test);
+      |                          ^~~~
+../Core/Src/main.c:64:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   64 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[20]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[20]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   9168	     92	   2052	  11312	   2c30	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+11:23:43 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:64:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   64 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[20]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[20]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8624	     12	   1740	  10376	   2888	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+11:57:31 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:50:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   50 | uint8_t index = 0;
+      |         ^~~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:64:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   64 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[20]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 20);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[20]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8596	     12	   1732	  10340	   2864	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+12:16:24 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-size  BT1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8596	     12	   1732	  10340	   2864	BT1.elf
+Finished building: default.size.stdout
+ 
+12:17:30 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:50:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   50 | uint8_t index = 0;
+      |         ^~~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:64:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   64 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[20]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[20]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[20]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8596	     12	   1732	  10340	   2864	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+12:17:59 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:50:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   50 | uint8_t index = 0;
+      |         ^~~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:64:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   64 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[8]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[8]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8596	     12	   1724	  10332	   285c	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+12:45:07 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:62:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   62 |                 sscanf(uart_buf, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+   22 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   23 | 
+../Core/Src/main.c:62:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   62 |                 sscanf(uart_buf, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:62:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../Core/Src/main.c:63:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   63 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[8]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   99 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[8]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12132	     92	   2060	  14284	   37cc	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+14:37:54 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:66:54: error: 'data' undeclared (first use in this function); did you mean 'y_data'?
+   66 |                                         re_data[j] = data[(i + j) % 8];
+      |                                                      ^~~~
+      |                                                      y_data
+../Core/Src/main.c:66:54: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:71:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   71 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+   22 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   23 | 
+../Core/Src/main.c:71:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   71 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:71:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../Core/Src/main.c:72:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   72 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[8]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  108 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[8]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+14:38:16 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:71:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   71 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+   22 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   23 | 
+../Core/Src/main.c:71:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   71 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:71:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../Core/Src/main.c:72:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+   72 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[8]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  108 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[8]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12232	     92	   2068	  14392	   3838	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+14:38:19 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-size  BT1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12232	     92	   2068	  14392	   3838	BT1.elf
+Finished building: default.size.stdout
+ 
+15:42:28 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:75:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   75 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:75:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   75 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:75:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../Core/Src/main.c:103:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  103 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[8]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16180	     92	   2140	  18412	   47ec	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+15:43:33 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-size  BT1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16180	     92	   2140	  18412	   47ec	BT1.elf
+Finished building: default.size.stdout
+ 
+15:44:51 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:75:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   75 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:75:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   75 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:75:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../Core/Src/main.c:103:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  103 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[8]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+  15668	     92	   2140	  17900	   45ec	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+15:45:45 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:75:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   75 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:75:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   75 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:75:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../Core/Src/main.c:103:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  103 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[8]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  143 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[8]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+  15688	     92	   2140	  17920	   4600	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+15:46:16 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:75:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   75 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:75:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   75 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:75:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../Core/Src/main.c:103:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  103 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[8]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  143 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[8]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16200	     92	   2140	  18432	   4800	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 

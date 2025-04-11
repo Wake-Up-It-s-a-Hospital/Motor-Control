@@ -1,0 +1,50 @@
+15:46:16 **** Incremental Build of configuration Debug for project BT1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:75:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   75 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:75:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   75 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:75:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../Core/Src/main.c:103:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  103 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[8]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  143 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[8]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "BT1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM32\BT1\BT1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BT1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BT1.elf
+ 
+arm-none-eabi-size  BT1.elf 
+arm-none-eabi-objdump -h -S BT1.elf  > "BT1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16200	     92	   2140	  18432	   4800	BT1.elf
+Finished building: default.size.stdout
+ 
+Finished building: BT1.list
+ 
+
+15:46:17 Build Finished. 0 errors, 4 warnings. (took 721ms)
+
