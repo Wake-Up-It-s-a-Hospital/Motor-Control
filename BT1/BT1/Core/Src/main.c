@@ -45,10 +45,13 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-// 수신 버퍼 변수
+// buffer variable
 char uart_buf[8];
 char re_data[8];
 int x_data, y_data;
+
+uint32_t throttle = 1;
+uint32_t steering = 1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -59,10 +62,10 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-// 블루투스 수신 인터럽트
+// BT ISR
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 	if (huart -> Instance == USART1) {
-		// 수신 배열 정렬 코드
+		// arrangement
 		for (int i = 0; i < 8; i++) {
 			if (uart_buf[(i + 7) % 8] == '.') {
 				for (int j = 0; j < 8; j++) {
@@ -71,7 +74,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 			}
 		}
 
-		// 정수 변환
+		// integer conversion
 		sscanf(re_data, "%d,%d.", &x_data, &y_data);
 		if (y_data == 101) {
 			y_data = 100;
@@ -90,9 +93,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 
 		// 임의 차동 구동 코드
 		if (x_data > 0 && y_data >= 0) {
-			x_calc = (float)x_data ;
+			x_calc = (float)x_data * throttle;
 			PWM1_value = (uint32_t)x_calc;
-			y_calc = (float)x_data  * (100 - (float)y_data) / 100;
+			y_calc = (float)x_data  * throttle * (100 - (float)y_data) / 100 * steering;
 			PWM2_value = (uint32_t)y_calc;
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, 0);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, 0);
@@ -100,9 +103,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 			__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, PWM1_value);
 		}
 		else if (x_data > 0 && y_data < 0) {
-			x_calc = (float)x_data  * (100 + (float)y_data) / 100;
+			x_calc = (float)x_data * throttle  * (100 + (float)y_data) / 100 * steering;
 			PWM1_value = (uint32_t)x_calc;
-			y_calc = (float)x_data ;
+			y_calc = (float)x_data * throttle;
 			PWM2_value = (uint32_t)y_calc;
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, 0);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, 0);
@@ -111,8 +114,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 		}
 		else if (x_data < 0 && y_data >= 0) {
 			x_calc = fabsf((float)x_data) ;
-			PWM1_value = (uint32_t)x_calc;
-			y_calc = fabsf((float)x_data)* (100 - (float)y_data) / 100;
+			PWM1_value = (uint32_t)x_calc * throttle;
+			y_calc = fabsf((float)x_data) * throttle * (100 - (float)y_data) / 100 * steering;
 			PWM2_value = (uint32_t)y_calc;
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, 1);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, 1);
@@ -120,9 +123,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 			__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, PWM1_value);
 		}
 		else if (x_data < 0 && y_data < 0) {
-			x_calc = fabsf((float)x_data) * (100 + (float)y_data) / 100;
+			x_calc = fabsf((float)x_data) * throttle * (100 + (float)y_data) / 100 * steering;
 			PWM1_value = (uint32_t)x_calc;
-			y_calc = fabsf((float)x_data);
+			y_calc = fabsf((float)x_data) * throttle;
 			PWM2_value = (uint32_t)y_calc;
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, 1);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, 1);
