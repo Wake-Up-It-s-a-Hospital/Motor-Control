@@ -1,0 +1,10 @@
+20:15:23 **** Incremental Build of configuration Debug for project motor6 ****
+make -j12 all 
+arm-none-eabi-size  motor6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39452	    484	   2572	  42508	   a60c	motor6.elf
+Finished building: default.size.stdout
+ 
+
+20:15:25 Build Finished. 0 errors, 0 warnings. (took 1s.816ms)
+

@@ -1,0 +1,73 @@
+11:49:50 **** Incremental Build of configuration Debug for project motor1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:73:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   73 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:73:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   73 |                 sscanf(re_data, "%d,%d.", &x_data, &y_data);
+      |                 ^~~~~~
+../Core/Src/main.c:73:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../Core/Src/main.c:101:34: warning: implicit declaration of function 'fabsf' [-Wimplicit-function-declaration]
+  101 |                         x_calc = fabsf((float)x_data) ;
+      |                                  ^~~~~
+../Core/Src/main.c:24:1: note: include '<math.h>' or provide a declaration of 'fabsf'
+   23 | #include "gpio.h"
+  +++ |+#include <math.h>
+   24 | 
+../Core/Src/main.c:101:34: warning: incompatible implicit declaration of built-in function 'fabsf' [-Wbuiltin-declaration-mismatch]
+  101 |                         x_calc = fabsf((float)x_data) ;
+      |                                  ^~~~~
+../Core/Src/main.c:101:34: note: include '<math.h>' or provide a declaration of 'fabsf'
+../Core/Src/main.c:111:34: warning: incompatible implicit declaration of built-in function 'fabsf' [-Wbuiltin-declaration-mismatch]
+  111 |                         x_calc = fabsf((float)x_data)* (100 + (float)y_data) / 100;
+      |                                  ^~~~~
+../Core/Src/main.c:111:34: note: include '<math.h>' or provide a declaration of 'fabsf'
+../Core/Src/main.c:122:46: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  122 |                 HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              char (*)[8]
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:166:32: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                char (*)[8]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../Core/Src/main.c:175:48: warning: passing argument 2 of 'HAL_UART_Receive_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  175 |                   HAL_UART_Receive_IT(&huart1, &uart_buf, 8);
+      |                                                ^~~~~~~~~
+      |                                                |
+      |                                                char (*)[8]
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:752:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char (*)[8]'
+  752 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "motor1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\motor1\motor1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="motor1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: motor1.elf
+ 
+arm-none-eabi-size  motor1.elf 
+arm-none-eabi-objdump -h -S motor1.elf  > "motor1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17948	     92	   2156	  20196	   4ee4	motor1.elf
+Finished building: default.size.stdout
+ 
+Finished building: motor1.list
+ 
+
+11:50:01 Build Finished. 0 errors, 8 warnings. (took 10s.719ms)
+
