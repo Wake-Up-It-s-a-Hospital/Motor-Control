@@ -544,21 +544,15 @@ int main(void)
 	      sscanf(rx_buf, "%d/", &rx_theta);
 	  }
 
-/*	  if (dis > 1.00) {
+	  if (dis > 1.00) {
 		  dis = 1.00;
-	  }*/
-
-/*	  if (dis > 0.79) {
-		  dis = 0.79;
-	  }*/
+	  }
 
 	  theta = -(rx_theta);
 
 	  if (theta > -20 && theta < 20) {
 		  theta = 0;
 	  }
-
-	  theta = 0;
 
 	  D_w = d_w(dis);
 
@@ -587,6 +581,11 @@ int main(void)
 	  if (PWM2_value > 100) {
 		  PWM2_value = 100;
 	  }
+
+	  dis = 0.9;
+	  PWM1_value = 8;
+	  PWM2_value = 8;
+
 
 	  if (dis >= 0.8) {
 		  if (theta > 45 || theta < -45) {

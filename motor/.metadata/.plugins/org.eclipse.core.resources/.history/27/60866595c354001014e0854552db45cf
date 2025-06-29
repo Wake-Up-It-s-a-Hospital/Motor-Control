@@ -544,9 +544,9 @@ int main(void)
 	      sscanf(rx_buf, "%d/", &rx_theta);
 	  }
 
-/*	  if (dis > 1.00) {
+	  if (dis > 1.00) {
 		  dis = 1.00;
-	  }*/
+	  }
 
 /*	  if (dis > 0.79) {
 		  dis = 0.79;
@@ -557,8 +557,6 @@ int main(void)
 	  if (theta > -20 && theta < 20) {
 		  theta = 0;
 	  }
-
-	  theta = 0;
 
 	  D_w = d_w(dis);
 

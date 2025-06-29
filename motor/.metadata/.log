@@ -2105,3 +2105,18 @@ java.lang.Exception: The project description file (.project) for 'motor7' is mis
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-27 19:40:06.139
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-06-29 13:18:42.235 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-29 13:19:02.266
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-29 13:19:02.267
+!MESSAGE Log4j2 initialized with config file D:\STM32\motor1\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-29 13:19:13.740
+!MESSAGE Started RMI Server, listening on port 41337

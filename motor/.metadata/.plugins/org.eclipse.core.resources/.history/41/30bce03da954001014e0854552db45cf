@@ -95,7 +95,7 @@ uint32_t PWM1_value, PWM2_value;
 
 float r = 0.0575;
 float b = 0.257;
-float dis, theta, V, W, W_test;
+float dis, theta, V, W;
 float K_v = 2;
 float K_w = 2;
 float K_t = 0.125;
@@ -103,10 +103,10 @@ float D_w;
 
 #define PI 3.1415926535
 
-#define RX_BUF_SIZE 32
+#define RX_BUF_SIZE 16
 
 uint8_t rx_byte;
-char rx_buf[RX_BUF_SIZE];
+char rx_buf[5];
 uint8_t rx_index = 0;
 volatile uint8_t rx_flag = 0;
 int rx_theta;
@@ -459,7 +459,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-	HAL_Init();
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -544,21 +544,15 @@ int main(void)
 	      sscanf(rx_buf, "%d/", &rx_theta);
 	  }
 
-/*	  if (dis > 1.00) {
+	  if (dis > 1.00) {
 		  dis = 1.00;
-	  }*/
-
-/*	  if (dis > 0.79) {
-		  dis = 0.79;
-	  }*/
+	  }
 
 	  theta = -(rx_theta);
 
-	  if (theta > -20 && theta < 20) {
+	  if (theta > -10 && theta < 10) {
 		  theta = 0;
 	  }
-
-	  theta = 0;
 
 	  D_w = d_w(dis);
 
@@ -570,7 +564,6 @@ int main(void)
 	  }
 
 	  W = K_w * theta * PI / 180;
-	  W_test = W * b / 2;
 
 	  w_L = ((V - W * b / 2) / r) * D_w;
 	  w_R = ((V + W * b / 2) / r) * D_w;
@@ -588,19 +581,12 @@ int main(void)
 		  PWM2_value = 100;
 	  }
 
+
 	  if (dis >= 0.8) {
-		  if (theta > 45 || theta < -45) {
-			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, 1);
-			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, 1);
-			  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, PWM1_value);
-			  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1, PWM2_value);
-		  }
-		  else {
-			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, 1);
-			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, 1);
-			  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, PWM1_value);
-			  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1, PWM2_value);
-		  }
+		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, 1);
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, 1);
+		  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, PWM1_value);
+		  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1, PWM2_value);
 	  }
 	  else if (dis < 0.8) {
 		  if (theta > 45 || theta < -45) {
