@@ -100,7 +100,6 @@ float b = 0.257;
 float dis, theta, V, W;
 float K_v = 2;
 float K_w = 2;
-float K_t = 0.125;
 float D_w;
 
 #define PI 3.1415926535
@@ -558,20 +557,11 @@ int main(void)
 
 	  D_w = d_w(dis);
 
-	  if (dis >= 0.8) {
-		  V = K_v * (dis - 0.8);
-	  }
-	  else {
-		  V = K_t * dis;
-	  }
-
+	  V = K_v * (dis - 0.8);
 	  W = K_w * theta * PI / 180;
 
-/*	  w_L = ((V - W * b / 2) / r) * D_w;
-	  w_R = ((V + W * b / 2) / r) * D_w;*/
-
-	  w_L = (V - W * b / 2) / r;
-	  w_R = (V + W * b / 2) / r;
+	  w_L = ((V - W * b / 2) / r) * D_w;
+	  w_R = ((V + W * b / 2) / r) * D_w;
 
 	  PWM1_value = w_L / 26.28 * 100;
 	  PWM2_value = w_R / 26.28 * 100;

@@ -558,20 +558,18 @@ int main(void)
 
 	  D_w = d_w(dis);
 
+	  V = K_v * (dis - 0.8);
+
 	  if (dis >= 0.8) {
 		  V = K_v * (dis - 0.8);
 	  }
 	  else {
 		  V = K_t * dis;
 	  }
-
 	  W = K_w * theta * PI / 180;
 
-/*	  w_L = ((V - W * b / 2) / r) * D_w;
-	  w_R = ((V + W * b / 2) / r) * D_w;*/
-
-	  w_L = (V - W * b / 2) / r;
-	  w_R = (V + W * b / 2) / r;
+	  w_L = ((V - W * b / 2) / r) * D_w;
+	  w_R = ((V + W * b / 2) / r) * D_w;
 
 	  PWM1_value = w_L / 26.28 * 100;
 	  PWM2_value = w_R / 26.28 * 100;
