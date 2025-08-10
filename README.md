@@ -44,19 +44,3 @@
    
 3. **외부 신호 기반 모터 전원 제어**
    - 타 보드에서 전원 제어 신호 수신 시 모터 구동 전원 차단/허용.
-
----
-
-## 📂 디렉토리 구조 예시
-```plaintext
-├── src/
-│   ├── motor_control.c      # 모터 제어 로직
-│   ├── ultrasonic.c         # 초음파 센서 교차 동작 구현
-│   ├── uart_comm.c          # UART 통신 기능
-│   └── power_control.c      # 외부 신호 기반 모터 전원 제어
-├── include/
-│   ├── motor_control.h
-│   ├── ultrasonic.h
-│   ├── uart_comm.h
-│   └── power_control.h
-└── README.md
